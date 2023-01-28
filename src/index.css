@@ -1,0 +1,207 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #D1D5DB;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#centerItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Toggle Button */
+.on{
+    background-color: #F84464;
+    color: white;
+}
+
+
+#imageOn{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 50px;
+    
+}
+.off{
+    background-color: lightgray;
+    
+    
+    
+}
+#imageOff{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 35px;
+    color: rgb(126, 126, 126);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+/* NewsCard */
+.NewsContainerForVertical{
+   display: flex;
+   justify-content:space-around;
+   flex-wrap: wrap;
+   align-items: center;
+   height: 90%;
+   padding: 10px;
+   width: 90%;
+
+}
+
+.VerticalCard{
+    background-color: white;
+    width: 28%;
+    height: 45%;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.image-card{
+    aspect-ratio: 1;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.NewsContainerForHorizontal{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    padding: 10px;
+    width: 90%;
+    /* background-color: lightgray; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.HorizontalCard{
+    width: 100%;
+    height: 15%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* I frame  */
+
+.Iframe-container{
+    width: 100%;
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    
+}
+.FeeBackFormContainer{
+    width: 75%;
+    height: 100vh;
+    backdrop-filter: blur(3px);
+}
+
+/* // Form  */
+
+.App {
+    /* text-align: center; */
+    background-color: #EBF2F7;
+    height: 100vh;
+    width: 75%;
+    border-radius: 40px;
+ }
+ form {
+   /* border:2px solid green; */
+   padding: 30px;
+ }
+
+ .App-header {
+   /* background-color: white; */
+   min-height: 100vh;
+   display: flex;
+   width: 70%;
+   flex-direction: column;
+   align-items: center;
+   /* justify-content: center; */
+   font-size: calc(10px + 2vmin);
+   color: black;
+ }
+
+ /* FeedBack button  */
+
+ .FeedBackButtonOff{
+     background-color: lightgreen;
+
+ }
+ .FeedBackButtonOn{
+    background-color: #F84464;
+    color: white;
+
+}
+
+
+/* form */
+
+textarea ,input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s;
+    height: 50px;
+    margin-bottom: 25px;
+    width: 300px;
+    padding-left: 5px;
+    background-color: rgb(241 245 249);
+}
+.form-btn{
+    background-color: #F84464;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.review-card{
+    width: 50%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .review-card{
+        width: 70%;
+        font-size: 15px;
+    }
+    
+}
+
+  @media only screen and (max-width: 900px) {
+    .review-card{
+        width: 80%;
+        font-size: 12px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 700px) {
+    .review-card{
+        width: 100%;
+        font-size: 10px;
+    }
+    
+  }
